@@ -2,121 +2,426 @@
   "books": [{
     "id": "1",
     "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-    "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.",
-    "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
     "isbn": "0439785960",
     "isbn13": "9780439785969",
-    "authors": [
-
-      {
-        "id": "1077326",
-        "name": "J.K. Rowling",
-        "role": ""
-      }, {
-        "id": "2927",
-        "name": "Mary GrandPré",
-        "role": "Illustrator"
-      }
-    ]
+    "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.<br />--scholastic.com",
+    "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }, {
+      "id": "2927",
+      "name": "Mary GrandPré",
+      "role": "Illustrator"
+    }]
+  }, {
+    "id": "10",
+    "title": "Harry Potter Collection (Harry Potter, #1-6)",
+    "isbn": "0439827604",
+    "isbn13": "9780439827607",
+    "description": "Six years of magic, adventure, and mystery make this luxurious boxed set the perfect gift for Harry Potter fans of all ages. <br />Follow Harry from his first days at Hogwarts School for Witchcraft and Wizardry, through his many adventures with Hermione and Ron, to his confrontations with rival Draco Malfoy and the dreaded Professor Snape. From the thrilling search for the Sorcerer's Stone to the Triwizard Tournament to the return of He-Who-Must-Not-Be-Named, each adventure is more riveting and exhilarating than its predecessor, and now all six books are available together for the first time in an elegant hardcover boxed set.",
+    "image_url": "https://images.gr-assets.com/books/1328867351l/10.jpg",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }]
+  }, {
+    "id": "105",
+    "title": "Chapterhouse: Dune (Dune Chronicles #6)",
+    "isbn": "0441102670",
+    "isbn13": "9780441102679",
+    "description": "The desert planet Arrakis, called Dune, has been destroyed. Now, the Bene Gesserit, heirs to Dune's power, have colonized a green world--and are turning it into a desert, mile by scorched mile.<br />Here is the last book <b>Frank Herbert</b> wrote before his death. A stunning climax to the epic Dune legend that will live on forever...",
+    "image_url": "https://images.gr-assets.com/books/1260954505l/105.jpg",
+    "authors": [{
+      "id": "58",
+      "name": "Frank Herbert",
+      "role": ""
+    }]
+  }, {
+    "id": "106",
+    "title": "Dune Messiah (Dune Chronicles #2)",
+    "isbn": "0441172695",
+    "isbn13": "9780441172696",
+    "description": "<b>Dune Messiah</b> continues the story of the man Muad'dib, heir to a power unimaginable, bringing to completion the centuries-old scheme to create a super-being.\"Brilliant...It is all that <b>Dune</b> was, and maybe a little bit more.\"--<b>Galaxy Magazine</b>",
+    "image_url": "https://images.gr-assets.com/books/1392528394l/106.jpg",
+    "authors": [{
+      "id": "58",
+      "name": "Frank Herbert",
+      "role": ""
+    }]
+  }, {
+    "id": "11",
+    "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+    "isbn": "0345391802",
+    "isbn13": "9780345391803",
+    "description": "Seconds before the Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker's Guide to the Galaxy who, for the last fifteen years, has been posing as an out-of-work actor.<br /><br />Together this dynamic pair begin a journey through space aided by quotes from The Hitchhiker's Guide (\"A towel is about the most massively useful thing an interstellar hitchhiker can have\") and a galaxy-full of fellow travelers: Zaphod Beeblebrox--the two-headed, three-armed ex-hippie and totally out-to-lunch president of the galaxy; Trillian, Zaphod's girlfriend (formally Tricia McMillan), whom Arthur tried to pick up at a cocktail party once upon a time zone; Marvin, a paranoid, brilliant, and chronically depressed robot; Veet Voojagig, a former graduate student who is obsessed with the disappearance of all the ballpoint pens he bought over the years.",
+    "image_url": "https://images.gr-assets.com/books/1327656754l/11.jpg",
+    "authors": [{
+      "id": "4",
+      "name": "Douglas Adams",
+      "role": ""
+    }]
+  }, {
+    "id": "112",
+    "title": "Children of Dune (Dune Chronicles #3)",
+    "isbn": "0441104029",
+    "isbn13": "9780441104024",
+    "description": "The desert planet of Arrakis has begun to grow green and lush. The life-giving spice is abundant. The nine-year-old royal twins, possesing their father's supernatural powers, are being groomed as Messiahs.<br />But there are those who think the Imperium does not need messiahs...",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "58",
+      "name": "Frank Herbert",
+      "role": ""
+    }]
+  }, {
+    "id": "117",
+    "title": "Heretics of Dune (Dune Chronicles #5)",
+    "isbn": "0441328008",
+    "isbn13": "9780441328000",
+    "description": "With more than ten million copies sold, <b>Frank Herbert</b>'s magnificent <b>Dune</b> books stand among the major achievements of the human imagination. In this, the fifth and most spectacular <b>Dune</b> book of all, the planet Arrakis--now called Rakis--is becoming desert again. The Lost Ones are returning home from the far reaches of space. The great sandworms are dying. And the children of Dune's children awaken from empire as from a dream, wielding the new power of a heresy called love...",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "58",
+      "name": "Frank Herbert",
+      "role": ""
+    }]
+  }, {
+    "id": "119",
+    "title": "The Lord of the Rings: The Art of The Fellowship of the Ring",
+    "isbn": "0618212906",
+    "isbn13": "9780618212903",
+    "description": "With complete and unrestricted access to artowrk created over a five-year period, this authoritative and insightful book illustrates the creative development of <i>The Fellowship of the Ring</i>. This official publication contains 500 exclusive images, from the earliest pencil sketches and conceptual drawings to magnificant full-color paintings that shaped the look of the film. All the principal locations, costumes, armor and creatures are covered in stunning detail, including concepts, storyboards and images that did not make it into the final film.<br /><br /><br />As well as a wealth of sketches, paintings and digital images, <i>The Art of The Fellowship of the Ring</i> contains photographs showing how the creative process was realized and a number of stills from the film. Contributors include Alan Lee and John Howe, the two artists who inspired Peter Jackson's vision of Middle-earth and who worked with him to bring his trilogy to the big screen. They and a dozen other designers who created all of these diverse elements explain how they contributed to the development of the film, giving a fascinating insight into how Middle-earth was brought to life.<br /><br /><br />With text compiled from exclusive interviews with director Peter Jackson, special effects supervisor Richard Taylor, designers Grant Major, Ngila Dickson, Paul Lasaine and others, this unique book celebrates the pivotal contribution made by a handful of people which help turn the first <i>Lord of the Rings</i> movie into an award-winning global success.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "60",
+      "name": "Gary Russell",
+      "role": ""
+    }]
+  }, {
+    "id": "122",
+    "title": "The Power of One (The Power of One, #1)",
+    "isbn": "034541005X",
+    "isbn13": "9780345410054",
+    "description": "No stranger to the injustice of racial hatred, five-year-old Peekay learns the hard way the first secret of survival and self-preservation - the power of one. An encounter with amateur boxer Hoppie Groenewald inspires in Peekay a fiery ambition - to be welterweight champion of the world.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "63",
+      "name": "Bryce Courtenay",
+      "role": ""
+    }]
+  }, {
+    "id": "13",
+    "title": "The Ultimate Hitchhiker's Guide to the Galaxy",
+    "isbn": "0345453743",
+    "isbn13": "9780345453747",
+    "description": "At last in paperback in one complete volume, here are the five novels from Douglas Adams's Hitchhiker series. <br /><br />\"The Hitchhiker's Guide to the Galaxy\"<br /><br />Seconds before the Earth is demolished for a galactic freeway, Arthur Dent is saved by Ford Prefect, a researcher for the revised Guide. Together they stick out their thumbs to the stars and begin a wild journey through time and space.<br /><br />\"The Restaurant at the End of the Universe\"<br /><br />Facing annihilation at the hands of warmongers is a curious time to crave tea. It could only happen to the cosmically displaced Arthur Dent and his comrades as they hurtle across the galaxy in a desperate search for a place to eat.<br /><br />\"Life, the Universe and Everything\"<br /><br />The unhappy inhabitants of planet Krikkit are sick of looking at the night sky- so they plan to destroy it. The universe, that is. Now only five individuals can avert Armageddon: mild-mannered Arthur Dent and his stalwart crew.<br /><br />\"So Long, and Thanks for All the Fish\"<br /><br />Back on Earth, Arthur Dent is ready to believe that the past eight years were all just a figment of his stressed-out imagination. But a gift-wrapped fishbowl with a cryptic inscription conspires to thrust him back to reality. So to speak.<br /><br />\"Mostly Harmless\"<br /><br />Just when Arthur Dent makes the terrible mistake of starting to enjoy life, all hell breaks loose. Can he save the Earth from total obliteration? Can he save the Guide from a hostile alien takeover? Can he save his daughter from herself?<br /><br />Also includes the short story \"Young Zaphod Plays It Safe\".",
+    "image_url": "https://images.gr-assets.com/books/1404613595l/13.jpg",
+    "authors": [{
+      "id": "4",
+      "name": "Douglas Adams",
+      "role": ""
+    }]
   }, {
     "id": "2",
-    "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-    "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.",
-    "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
-    "isbn": "0439785960",
-    "isbn13": "9780439785969",
-    "authors": [
-
-      {
-        "id": "1077326",
-        "name": "J.K. Rowling",
-        "role": ""
-      }, {
-        "id": "2927",
-        "name": "Mary GrandPré",
-        "role": "Illustrator"
-      }
-    ]
-  },
-  {
+    "title": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+    "isbn": "0439358078",
+    "isbn13": "9780439358071",
+    "description": "Harry Potter is due to start his fifth year at Hogwarts School of Witchcraft and Wizardry. His best friends Ron and Hermione have been very secretive all summer and he is desperate to get back to school and find out what has been going on. However, what Harry discovers is far more devastating than he could ever have expected...<br /><br />Suspense, secrets and thrilling action from the pen of J.K. Rowling ensure an electrifying adventure that is impossible to put down.",
+    "image_url": "https://images.gr-assets.com/books/1387141547l/2.jpg",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }, {
+      "id": "2927",
+      "name": "Mary GrandPré",
+      "role": "Illustrator"
+    }]
+  }, {
+    "id": "21",
+    "title": "A Short History of Nearly Everything",
+    "isbn": "076790818X",
+    "isbn13": "9780767908184",
+    "description": "In Bryson's biggest book, he confronts his greatest challenge: to understand—and, if possible, answer—the oldest, biggest questions we have posed about the universe and ourselves. Taking as territory everything from the Big Bang to the rise of civilization, Bryson seeks to understand how we got from there being nothing at all to there being us. To that end, he has attached himself to a host of the world’s most advanced (and often obsessed) archaeologists, anthropologists, and mathematicians, travelling to their offices, laboratories, and field camps. He has read (or tried to read) their books, pestered them with questions, apprenticed himself to their powerful minds. <b>A Short History of Nearly Everything</b><i> </i>is the record of this quest, and it is a sometimes profound, sometimes funny, and always supremely clear and entertaining adventure in the realms of human knowledge, as only Bill Bryson can render it. Science has never been more involving or entertaining.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
+    "id": "24",
+    "title": "In a Sunburned Country",
+    "isbn": "0767903862",
+    "isbn13": "9780767903868",
+    "description": "<b>A CLASSIC FROM THE <i>NEW YORK TIMES</i> BESTSELLING AUTHOR OF <i>ONE SUMMER </i></b><br /><br />Every time Bill Bryson walks out the door, memorable travel literature threatens to break out. His previous excursion along the Appalachian Trail resulted in the sublime national bestseller <i>A Walk in the Woods</i>. <i>In A Sunburned Country</i> is his report on what he found in an entirely different place: Australia, the country that doubles as a continent, and a place with the friendliest inhabitants, the hottest, driest weather, and the most peculiar and lethal wildlife to be found on the planet. The result is a deliciously funny, fact-filled, and adventurous performance by a writer who combines humor, wonder, and unflagging curiousity.<br /><br />Despite the fact that Australia harbors more things that can kill you in extremely nasty ways than anywhere else, including sharks, crocodiles, snakes, even riptides and deserts, Bill Bryson adores the place, and he takes his readers on a rollicking ride far beyond that beaten tourist path. Wherever he goes he finds Australians who are cheerful, extroverted, and unfailingly obliging, and these beaming products of land with clean, safe cities, cold beer, and constant sunshine fill the pages of this wonderful book. Australia is an immense and fortunate land, and it has found in Bill Bryson its perfect guide.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
+    "id": "25",
+    "title": "I'm a Stranger Here Myself: Notes on Returning to America after Twenty Years Away",
+    "isbn": "076790382X",
+    "isbn13": "9780767903820",
+    "description": "After living in Britain for two decades, Bill Bryson recently moved back to the United States with his English wife and four children (he had read somewhere that nearly 3 million Americans believed they had been abducted by aliens--as he later put it, \"it was clear my people needed me\"). They were greeted by a new and improved America that boasts microwave pancakes, twenty-four-hour dental-floss hotlines, and the staunch conviction that ice is not a luxury item. <br /><br />Delivering the brilliant comic musings that are a Bryson hallmark, I'm a Stranger Here Myself recounts his sometimes disconcerting reunion with the land of his birth. The result is a book filled with hysterical scenes of one man's attempt to reacquaint himself with his own country, but it is also an extended if at times bemused love letter to the homeland he has returned to after twenty years away.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
+    "id": "26",
+    "title": "The Lost Continent: Travels in Small-Town America",
+    "isbn": "0060920084",
+    "isbn13": "9780060920081",
+    "description": "'I come from Des Moines. Somebody had to'<br /><br />And, as soon as Bill Bryson was old enough, he left. Des Moines couldn't hold him, but it did lure him back. After ten years in England, he returned to the land of his youth, and drove almost 14,000 miles in search of a mythical small town called Amalgam, the kind of trim and sunny place where the films of his youth were set. Instead, his search led him to Anywhere, USA; a lookalike strip of gas stations, motels and hamburger outlets populated by lookalike people with a penchant for synthetic fibres. Travelling around thirty-eight of the lower states - united only in their mind-numbingly dreary uniformity - he discovered a continent that was doubly lost; lost to itself because blighted by greed, pollution, mobile homes and television; lost to him because he had become a stranger in his own land.<br /><br />The Lost Continent is a classic of travel literature - hilariously, stomach-achingly funny, yet tinged with heartache - and the book that first staked Bill Bryson's claim as the most beloved writer of his generation.",
+    "image_url": "https://images.gr-assets.com/books/1404042682l/26.jpg",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
+    "id": "27",
+    "title": "Neither Here nor There: Travels in Europe",
+    "isbn": "0380713802",
+    "isbn13": "9780380713806",
+    "description": "Bill Bryson's first travel book, <i>The Lost Continent</i>, was unanimously acclaimed as one of the funniest books in years. In <i>Neither Here nor There</i> he brings his unique brand of humour to bear on Europe as he shoulders his backpack, keeps a tight hold on his wallet, and journeys from Hammerfest, the northernmost town on the continent, to Istanbul on the cusp of Asia. Fluent in, oh, at least one language, he retraces his travels as a student twenty years before.<br /><br />Whether braving the homicidal motorist of Paris, being robbed by gypsies in Florence, attempting not to order tripe and eyeballs in a German restaurant, window-shopping in the sex shops of the Reeperbahn or disputing his hotel bill in Copenhagen, Bryson takes in the sights, dissects the culture and illuminates each place and person with his hilariously caustic observations. He even goes to Liechtenstein.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
+    "id": "28",
+    "title": "Notes from a Small Island",
+    "isbn": "0380727501",
+    "isbn13": "9780380727506",
+    "description": "<b>\"Suddenly, in the space of a moment, I realized what it was that I loved about Britain-which is to say, all of it.\"</b><br /><br />After nearly two decades spent on British soil, Bill Bryson - bestselling author of <i>The Mother Tongue</i> and <i>Made in America</i>-decided to return to the United States. (\"I had recently read,\" Bryson writes, \"that 3.7 million Americans believed that they had been abducted by aliens at one time or another, so it was clear that my people needed me.\") But before departing, he set out on a grand farewell tour of the green and kindly island that had so long been his home.<br /><br />Veering from the ludicrous to the endearing and back again, <i>Notes from a Small Island</i> is a delightfully irreverent jaunt around the unparalleled floating nation that has produced zebra crossings, Shakespeare, Twiggie Winkie's Farm, and places with names like Farleigh Wallop and Titsey. The result is an uproarious social commentary that conveys the true glory of Britain, from the satiric pen of an unapologetic Anglophile.",
+    "image_url": "https://images.gr-assets.com/books/1479653223l/28.jpg",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
+    "id": "29",
+    "title": "The Mother Tongue: English and How It Got That Way",
+    "isbn": "0380715430",
+    "isbn13": "9780380715435",
+    "description": "More than 300 million people in the world speak English and the rest, it sometimes seems, try to...'<br /><br />Only Bill Bryson could make a book about the English language so entertaining. With his boundless enthusiasm and restless eye for the absurd, this is his astonishing tour of English. From its mongrel origins to its status as the world's most-spoken tongue; its apparent simplicity to its deceptive complexity; its vibrant swearing to its uncertain spelling and pronunciation, Bryson covers all this as well as the many curious eccentricities that make it as maddening to learn as it is flexible to use.<br /><br />Bill Bryson's classic Mother Tongue is a highly readable and hilarious tale of how English came to be the world's language.",
+    "image_url": "https://images.gr-assets.com/books/1388209925l/29.jpg",
+    "authors": [{
+      "id": "7",
+      "name": "Bill Bryson",
+      "role": ""
+    }]
+  }, {
     "id": "3",
-    "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-    "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.",
-    "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
-    "isbn": "0439785960",
-    "isbn13": "9780439785969",
-    "authors": [
-
-      {
-        "id": "1077326",
-        "name": "J.K. Rowling",
-        "role": ""
-      }, {
-        "id": "2927",
-        "name": "Mary GrandPré",
-        "role": "Illustrator"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-    "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.",
-    "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
-    "isbn": "0439785960",
-    "isbn13": "9780439785969",
-    "authors": [
-
-      {
-        "id": "1077326",
-        "name": "J.K. Rowling",
-        "role": ""
-      }, {
-        "id": "2927",
-        "name": "Mary GrandPré",
-        "role": "Illustrator"
-      }
-    ]
-  },
-  {
+    "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+    "isbn": "0439554934",
+    "isbn13": "9780439554930",
+    "description": "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.<br /><br />After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry.<br /><br />Though Harry's first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it's his responsibility to prevent it from falling into evil hands. But doing so will bring him into contact with forces more terrifying than he ever could have imagined.<br /><br />Full of sympathetic characters, wildly imaginative situations, and countless exciting details, the first installment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come.",
+    "image_url": "https://images.gr-assets.com/books/1474154022l/3.jpg",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }, {
+      "id": "2927",
+      "name": "Mary GrandPré",
+      "role": "Illustrator"
+    }]
+  }, {
+    "id": "30",
+    "title": "J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings",
+    "isbn": "0345538374",
+    "isbn13": "9780345538376",
+    "description": "This four volume, deluxe paperback boxed set contains J.R.R. Tolkien's epic masterworks <i>The Hobbit</i> and the three volumes of <i>The Lord Of The Rings</i> (<i>The Fellowship Of The Ring, The Two Towers,</i> and <i>The Return Of The King</i>) in their definitive text settings complete with maps and cover illustrations from the motion pictures. In <i>The Hobbit,</i> Bilbo Baggins is whisked away from his comfortable, unambitious life in Hobbiton by the wizard Gandalf and a company of dwarves. He finds himself caught up in a plot to raid the treasure hoard of Smaug the Magnificent, <i>The Lord Of The Rings</i> tells of the great and dangerous quest undertaken by Frodo Baggins and the Fellowship of the Ring: Gandalf the wizard; the hobbits Merry, Pippin, and Sam; Gimli the dwarf; Legolas the elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. J.R.R. Tolkien's three volume masterpiece is at once a classic myth and a modern fairy tale - a story of high and heroic adventure set in the unforgettable landscape of Middle-Earth.<p></p>",
+    "image_url": "https://images.gr-assets.com/books/1346072396l/30.jpg",
+    "authors": [{
+      "id": "656983",
+      "name": "J.R.R. Tolkien",
+      "role": ""
+    }]
+  }, {
+    "id": "33",
+    "title": "The Lord of the Rings (The Lord of the Rings, #1-3)",
+    "isbn": "0618640150",
+    "isbn13": "9780618640157",
+    "description": "A fantastic starter set for new Tolkien fans or readers interested in rediscovering the magic of Middle-earth, this three-volume box set features paperback editions of the complete trilogy -- <i>The Fellowship of the Ring, The Two Towers,</i> and <i>The Return of the King</i> -- each with art from the New Line Productions feature film on the cover.<br />J.R.R. Tolkien's <i>The Lord of the Rings</i> trilogy is a genuine masterpiece. The most widely read and influential fantasy epic of all time, it is also quite simply one of the most memorable and beloved tales ever told. Originally published in 1954, <i>The Lord of the Rings</i> set the framework upon which all epic/quest fantasy since has been built. Through the urgings of the enigmatic wizard Gandalf, young hobbit Frodo Baggins embarks on an urgent, incredibly treacherous journey to destroy the One Ring. This ring -- created and then lost by the Dark Lord, Sauron, centuries earlier -- is a weapon of evil, one that Sauron desperately wants returned to him. With the power of the ring once again his own, the Dark Lord will unleash his wrath upon all of Middle-earth. The only way to prevent this horrible fate from becoming reality is to return the Ring to Mordor, the only place it can be destroyed. Unfortunately for our heroes, Mordor is also Sauron's lair. <i>The Lord of the Rings</i> trilogy is essential reading not only for fans of fantasy but for lovers of classic literature as well...<br /><br /><i>Librarian's note: this edition shares an ISBN with the <a href=\"https://www.goodreads.com/book/show/18190993-the-lord-of-the-rings\" rel=\"nofollow\">2004 edition</a> published by Houghton Mifflin Company</i>",
+    "image_url": "https://images.gr-assets.com/books/1411114164l/33.jpg",
+    "authors": [{
+      "id": "656983",
+      "name": "J.R.R. Tolkien",
+      "role": ""
+    }]
+  }, {
+    "id": "34",
+    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "isbn": "0618346252",
+    "isbn13": "9780618346257",
+    "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them<br /><br />In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.<br /><br />In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
+    "image_url": "https://images.gr-assets.com/books/1298411339l/34.jpg",
+    "authors": [{
+      "id": "656983",
+      "name": "J.R.R. Tolkien",
+      "role": ""
+    }]
+  }, {
+    "id": "36",
+    "title": "The Lord of the Rings: Weapons and Warfare",
+    "isbn": "0618391002",
+    "isbn13": "9780618391004",
+    "description": "<p>Lavishly illustrated with 1,000 photos, paintings, maps, sculptures and sketches, most appearing here for the first time, Weapons and Warfare is an indispensable chronicle of The Lord of the Rings' many creatures, warriors, armies and battlegrounds. From the graceful and proficient Elves to the horrendous war machines of the Dark Lord, each culture's approach to warfare is explained - how they fought, why they were fighting, what armor they wore and what weapons they used against their enemies. Now you can get as close to a marauding Orc as you could ever wish, without suffering the consequences!</p><p>Treating the filmmakers' notes, designs and props as a true archive, Weapons and Warfare describes in detail every major conflict depicted in the film trilogy - from The Last Alliance of Elves and Men to the climactic Battle of the Pelennor Fields - each accompanied by a battle diagram from the films' chief designers.</p><p>Armed with a wealth of fascinating facts and unique imagery, and with an exclusive foreword by Christopher Lee and an introduction by the Academy Award winner Richard Taylor, Weapons and Warfare promises to be the most striking companion to The Lord of the Rings movie trilogy published to date.</p>",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "5448409",
+      "name": "Chris   Smith",
+      "role": "Editor"
+    }, {
+      "id": "4015",
+      "name": "Christopher Lee",
+      "role": "Contributor"
+    }, {
+      "id": "10154",
+      "name": "Richard Taylor",
+      "role": "Contributor"
+    }]
+  }, {
     "id": "5",
-    "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-    "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.",
-    "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
-    "isbn": "0439785960",
-    "isbn13": "9780439785969",
-    "authors": [
-
-      {
-        "id": "1077326",
-        "name": "J.K. Rowling",
-        "role": ""
-      }, {
-        "id": "2927",
-        "name": "Mary GrandPré",
-        "role": "Illustrator"
-      },
-      {
-        "id": "6",
-        "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-        "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses. And yet... As in all wars, life goes on. Sixth-year students learn to Apparate, and lose a few eyebrows in the process. The Weasley twins expand their business. Teenagers flirt and fight and fall in love. Classes are never straightforward, though Harry receives some extraordinary help from the mysterious Half-Blood Prince. So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Harry struggles to uncover the identity of the Half-Blood Prince, the past owner of a potions textbook he now possesses that is filled with ingenious, potentially deadly, spells. But Harry's life is suddenly changed forever when someone close to him is heinously murdered right before his eyes. With Dumbledore's guidance, he seeks out the full, complex story of the boy who became Lord Voldemort, and thereby attempts to find what may be his only vulnerability.",
-        "image_url": "https://images.gr-assets.com/books/1361039191l/1.jpg",
-        "isbn": "0439785960",
-        "isbn13": "9780439785969",
-        "authors": [
-    
-          {
-            "id": "1077326",
-            "name": "J.K. Rowling",
-            "role": ""
-          }, {
-            "id": "2927",
-            "name": "Mary GrandPré",
-            "role": "Illustrator"
-          }
-        ]
-      }
-    ]
-  }
-]
+    "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+    "isbn": "043965548X",
+    "isbn13": "9780439655484",
+    "description": "Harry Potter's third year at Hogwarts is full of new dangers. A convicted murderer, Sirius Black, has broken out of Azkaban prison, and it seems he's after Harry. Now Hogwarts is being patrolled by the dementors, the Azkaban guards who are hunting Sirius. But Harry can't imagine that Sirius or, for that matter, the evil Lord Voldemort could be more frightening than the dementors themselves, who have the terrible power to fill anyone they come across with aching loneliness and despair. Meanwhile, life continues as usual at Hogwarts. A top-of-the-line broom takes Harry's success at Quidditch, the sport of the Wizarding world, to new heights. A cute fourth-year student catches his eye. And he becomes close with the new Defense of the Dark Arts teacher, who was a childhood friend of his father. Yet despite the relative safety of life at Hogwarts and the best efforts of the dementors, the threat of Sirius Black grows ever closer. But if Harry has learned anything from his education in wizardry, it is that things are often not what they seem. Tragic revelations, heartwarming surprises, and high-stakes magical adventures await the boy wizard in this funny and poignant third installment of the beloved series.<br />--scholastic.com",
+    "image_url": "https://images.gr-assets.com/books/1499277281l/5.jpg",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }, {
+      "id": "2927",
+      "name": "Mary GrandPré",
+      "role": "Illustrator"
+    }, {
+      "id": "23601",
+      "name": "Rufus Beck",
+      "role": "Narrator"
+    }]
+  }, {
+    "id": "50",
+    "title": "Hatchet (Brian's Saga, #1)",
+    "isbn": "0689840926",
+    "isbn13": "9780689840920",
+    "description": "Brian is on his way to Canada to visit his estranged father when the pilot of his small prop plane suffers a heart attack. Brian is forced to crash-land the plane in a lake--and finds himself stranded in the remote Canadian wilderness with only his clothing and the hatchet his mother gave him as a present before his departure. <br /><br />Brian had been distraught over his parents' impending divorce and the secret he carries about his mother, but now he is truly desolate and alone. Exhausted, terrified, and hungry, Brian struggles to find food and make a shelter for himself. He has no special knowledge of the woods, and he must find a new kind of awareness and patience as he meets each day's challenges. Is the water safe to drink? Are the berries he finds poisonous? <br /><br />Slowly, Brian learns to turn adversity to his advantage--an invading porcupine unexpectedly shows him how to make fire, a devastating tornado shows him how to retrieve supplies from the submerged airplane. Most of all, Brian leaves behind the self-pity he has felt about his predicament as he summons the courage to stay alive. <br /><br />A story of survival and of transformation, this riveting book has sparked many a reader's interest in venturing into the wild.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "18",
+      "name": "Gary Paulsen",
+      "role": ""
+    }]
+  }, {
+    "id": "6",
+    "title": "Harry Potter and the Goblet of Fire (Harry Potter, #4)",
+    "isbn": "0439139600",
+    "isbn13": "9780439139601",
+    "description": "Harry Potter is midway through both his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup with Hermione, Ron, and the Weasleys. He wants to dream about Cho Chang, his crush (and maybe do more than dream). He wants to find out about the mysterious event that supposed to take place at Hogwarts this year, an event involving two other rival schools of magic, and a competition that hasn't happened for hundreds of years. He wants to be a normal, fourteen-year-old wizard. But unfortunately for Harry Potter, he's not normal - even by wizarding standards.<br />And in his case, different can be deadly.<br /><br />-From the back cover",
+    "image_url": "https://images.gr-assets.com/books/1361482611l/6.jpg",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }, {
+      "id": "2927",
+      "name": "Mary GrandPré",
+      "role": "Illustrator"
+    }]
+  }, {
+    "id": "67",
+    "title": "The Known World",
+    "isbn": "0061159174",
+    "isbn13": "9780061159176",
+    "description": "One of the most acclaimed novels in recent memory, <i>The Known World</i> is a daring and ambitious work by Pulitzer Prize winner Edward P. Jones.<br /><br /><i>The Known World</i> tells the story of Henry Townsend, a black farmer and former slave who falls under the tutelage of William Robbins, the most powerful man in Manchester County, Virginia. Making certain he never circumvents the law, Townsend runs his affairs with unusual discipline. But when death takes him unexpectedly, his widow, Caldonia, can't uphold the estate's order, and chaos ensues. Jones has woven a footnote of history into an epic that takes an unflinching look at slavery in all its moral complexities.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "33",
+      "name": "Edward P. Jones",
+      "role": ""
+    }]
+  }, {
+    "id": "8",
+    "title": "Harry Potter Boxed Set, Books 1-5 (Harry Potter, #1-5)",
+    "isbn": "0439682584",
+    "isbn13": "9780439682589",
+    "description": "Box Set containing Harry Potter and the Sorcerer's Stone, Harry Potter and the Chamber Of Secrets, Harry Potter and the Prisoner of Azkaban, Harry Potter and the Goblet Of Fire, and Harry Potter and the Order of the Phoenix!",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "1077326",
+      "name": "J.K. Rowling",
+      "role": ""
+    }, {
+      "id": "2927",
+      "name": "Mary GrandPré",
+      "role": "Illustrator"
+    }]
+  }, {
+    "id": "93",
+    "title": "Heidi",
+    "isbn": "0753454947",
+    "isbn13": "9780753454947",
+    "description": "Orphaned Heidi lives with her gruff but caring grandfather on the side of Swiss mountain, where she befriends young Peter the goat-herd. She leads an idyllic life, until she is forced to leave the mountain she has always known to go and live with a sickly girl in the city. Will Heidi ever see her grandfather again? A classic tale of a young girl's coming-of-age, of friendship, and familial love.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "49",
+      "name": "Johanna Spyri",
+      "role": ""
+    }, {
+      "id": "9829661",
+      "name": "Angelo  Rinaldi",
+      "role": "Illustrator"
+    }, {
+      "id": "403",
+      "name": "Beverly Cleary",
+      "role": "Contributor"
+    }]
+  }, {
+    "id": "98",
+    "title": "What to Expect the First Year (What to Expect)",
+    "isbn": "0761129588",
+    "isbn13": "9780761129585",
+    "description": "Some things about babies, happily, will never change. They still arrive warm, cuddly, soft, and smelling impossibly sweet. But how moms and dads care for their brand-new bundles of baby joy has changed—and now, so has the new-baby bible. <br /><br /> Announcing the completely revised third edition of <i>What to Expect the First Year</i>. With over 10.5 million copies in print, <i>First Year</i> is the world’s best-selling, best-loved guide to the instructions that babies don’t come with, but should. And now, it’s better than ever. Every parent’s must-have/go-to is completely updated. <br /><br /> Keeping the trademark month-by-month format that allows parents to take the potentially overwhelming first year one step at a time, <i>First Year</i> is easier-to-read, faster-to-flip-through, and new-family-friendlier than ever—packed with even more practical tips, realistic advice, and relatable, accessible information than before. Illustrations are new, too. <br /><br /> Among the changes: Baby care fundamentals—crib and sleep safety, feeding, vitamin supplements—are revised to reflect the most recent guidelines. Breastfeeding gets more coverage, too, from getting started to keeping it going. Hot-button topics and trends are tackled: attachment parenting, sleep training, early potty learning (elimination communication), baby-led weaning, and green parenting (from cloth diapers to non-toxic furniture). An all-new chapter on buying for baby helps parents navigate through today’s dizzying gamut of baby products, nursery items, and gear. Also new: tips on preparing homemade baby food, the latest recommendations on starting solids, research on the impact of screen time (TVs, tablets, apps, computers), and “For Parents” boxes that focus on mom’s and dad’s needs. Throughout, topics are organized more intuitively than ever, for the best user experience possible.",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+    "authors": [{
+      "id": "53",
+      "name": "Heidi Murkoff",
+      "role": ""
+    }, {
+      "id": "137747",
+      "name": "Sharon Mazel",
+      "role": ""
+    }, {
+      "id": "53",
+      "name": "Heidi Murkoff",
+      "role": ""
+    }, {
+      "id": "4673",
+      "name": "Arlene Eisenberg",
+      "role": ""
+    }, {
+      "id": "11850",
+      "name": "Sandee Hathaway",
+      "role": ""
+    }, {
+      "id": "3092798",
+      "name": "Mark D. Widome",
+      "role": "Contributor"
+    }]
+  }]
 }
