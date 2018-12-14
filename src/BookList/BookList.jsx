@@ -14,14 +14,14 @@ export class BookList extends Component {
   listView = () => {
     this.setState({ listView: true });
   };
-  getFirst100Words = (words)=>{
-      console.log(words);
-      let wordTokens = words.split(' ');
-      if(wordTokens.length > 30){
-          return wordTokens.slice(0,30).join (' ')+'...';
-      }
-      return words;
-  }
+  getFirst100Words = words => {
+    console.log(words);
+    let wordTokens = words.split(' ');
+    if (wordTokens.length > 30) {
+      return wordTokens.slice(0, 30).join(' ') + '...';
+    }
+    return words;
+  };
   gridView = () => {
     this.setState({ listView: false });
   };
@@ -43,7 +43,7 @@ export class BookList extends Component {
                 alt=""
               />
             </div>
-            <div className="caption card-body">
+            <div className="caption card-body title">
               <h4 className="group card-title inner list-group-item-heading">
                 {book.title}
               </h4>
@@ -53,10 +53,14 @@ export class BookList extends Component {
                   {book.authors.map(author => author.name).join(', ')}
                 </span>
               </p>
+            </div>
+            <div className="caption card-body title">
               <p className="group inner list-group-item-text">
                 {this.getFirst100Words(book.description)}
               </p>
-              <div className="row">
+            </div>
+            <div>
+              <div className="caption card-body">
                 <div className="col-xs-12 col-md-6">
                   <a className="btn btn-success" href="/">
                     Get Info
