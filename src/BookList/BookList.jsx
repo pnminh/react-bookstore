@@ -50,7 +50,7 @@ export class BookList extends Component {
               <p className="group inner list-group-item-text">
                 Author:
                 <span>
-                  {book.authors.map(author => author.name).join(', ')}
+                  {book.authors.join(', ')}
                 </span>
               </p>
             </div>
