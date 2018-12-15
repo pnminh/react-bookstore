@@ -1,32 +1,52 @@
 import React, { Component } from 'react';
 import * as axios from 'axios';
+import ReactPaginate from 'react-paginate';
 import './BookList.css';
 const url = 'http://localhost:3004/books';
 
 export class BookList extends Component {
   constructor() {
     super();
-    this.state = { listView: true, books: [] };
-    axios.get(url).then(response => {
-      this.setState({ books: response.data });
+    this.state = {
+      listView: true,
+      books: [],
+      pagination: { count: 10, page: 1, total: null }
+    };
+    this.loadBooks(this.state.pagination.count, this.state.pagination.page);
+  }
+  loadBooks(count, page) {
+    count = count ? count : 10;
+    page = page ? page : 1;
+    let params = `?_page=${page}&_limit=${count}`;
+    axios.get(url + params).then(response => {
+      this.setState({
+        books: response.data,
+        pagination: {
+          count: count,
+          page: page,
+          total: +response.headers['x-total-count']
+        }
+      });
     });
   }
   listView = () => {
     this.setState({ listView: true });
   };
   getFirst100Words = words => {
-    console.log(words);
     let wordTokens = words.split(' ');
-    if (wordTokens.length > 30) {
-      return wordTokens.slice(0, 30).join(' ') + '...';
+    if (wordTokens.length > 50) {
+      return wordTokens.slice(0, 50).join(' ') + '...';
     }
     return words;
   };
   gridView = () => {
     this.setState({ listView: false });
   };
+  handlePageClick = data => {
+    this.loadBooks(this.state.pagination.count, data.selected + 1);
+  };
+
   render() {
-    console.log(this.state.books);
     let renderedBookList = this.state.books.map((book, id) => {
       return (
         <div
@@ -49,12 +69,10 @@ export class BookList extends Component {
               </h4>
               <p className="group inner list-group-item-text">
                 Author:
-                <span>
-                  {book.authors.join(', ')}
-                </span>
+                <span>{book.authors.join(', ')}</span>
               </p>
             </div>
-            <div className="caption card-body title">
+            <div className="caption card-body body">
               <p className="group inner list-group-item-text">
                 {this.getFirst100Words(book.description)}
               </p>
@@ -102,6 +120,26 @@ export class BookList extends Component {
               </div>
             </div>
           </div>
+          <ReactPaginate
+            containerClassName="pagination pagination-lg"
+            breakClassName="page-item"
+            breakLabel={<a className="page-link">...</a>}
+            pageClassName="page-item"
+            activeClassName="active"
+            activeLinkClassName="disabled"
+            previousClassName="page-item"
+            nextClassName="page-item"
+            pageLinkClassName="page-link"
+            previousLinkClassName="page-link"
+            nextLinkClassName="page-link"
+            pageCount={
+              this.state.pagination.total / this.state.pagination.count
+            }
+            initialPage={this.state.pagination.page - 1}
+            pageRangeDisplayed={5}
+            marginPagesDisplayed={2}
+            onPageChange={this.handlePageClick}
+          />
           <div id="products" className="row view-group">
             {renderedBookList}
           </div>
