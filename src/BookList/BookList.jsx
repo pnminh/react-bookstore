@@ -20,7 +20,9 @@ export class BookList extends Component {
     let params = `?_page=${this.state.pagination.page}&_limit=${
       this.state.pagination.count
     }`;
-    if (this.state.searchTerm) params += `&title_like=${this.state.searchTerm}`;
+    if (this.state.searchTerm) {
+      params += `&title_like=${this.state.searchTerm}`;
+    }
     axios.get(url + params).then(response => {
       this.setState({
         books: response.data,
@@ -51,7 +53,7 @@ export class BookList extends Component {
     );
   };
   handleSearchInput = event => {
-    this.setState({ searchTerm: event.target.value }, this.loadBooks);
+    this.setState({ searchTerm: event.target.value,pagination:{...this.state.pagination,page:1} }, this.loadBooks);
   };
   render() {
     let renderedBookList = this.state.books.map((book, id) => {
@@ -86,7 +88,9 @@ export class BookList extends Component {
             </div>
             <div className="caption card-body">
               <div className="row justify-content-start">
-                <div className={`${this.state.listView ?'col-lg-2':'col-sm-5'}`}>
+                <div
+                  className={`${this.state.listView ? 'col-lg-2' : 'col-sm-5'}`}
+                >
                   <button
                     className="btn btn-lg btn-outline-primary bg-color fs-it-btn text-uppercase"
                     type="button"
@@ -94,7 +98,9 @@ export class BookList extends Component {
                     Get Info
                   </button>
                 </div>
-                <div className={`${this.state.listView ?'col-lg-2': 'col-sm-6'}`}>
+                <div
+                  className={`${this.state.listView ? 'col-lg-2' : 'col-sm-6'}`}
+                >
                   <button
                     className="btn btn-lg btn-outline-secondary bg-color fs-it-btn text-uppercase"
                     type="button"
@@ -158,6 +164,7 @@ export class BookList extends Component {
                   this.state.pagination.total / this.state.pagination.count
                 }
                 initialPage={this.state.pagination.page - 1}
+                forcePage={this.state.pagination.page - 1}
                 pageRangeDisplayed={3}
                 marginPagesDisplayed={1}
                 onPageChange={this.handlePageClick}
