@@ -84,12 +84,25 @@ export class BookList extends Component {
                 {this.getFirst100Words(book.description)}
               </p>
             </div>
-            <div>
-              <div className="caption card-body">
-                <div className="col-xs-12 col-md-6">
-                  <a className="btn btn-success" href="/">
+            <div className="caption card-body">
+              <div className="row justify-content-start">
+                <div className={`${this.state.listView ?'col-lg-2':'col-sm-5'}`}>
+                  <button
+                    className="btn btn-lg btn-outline-primary bg-color fs-it-btn text-uppercase"
+                    type="button"
+                  >
                     Get Info
-                  </a>
+                  </button>
+                </div>
+                <div className={`${this.state.listView ?'col-lg-2': 'col-sm-6'}`}>
+                  <button
+                    className="btn btn-lg btn-outline-secondary bg-color fs-it-btn text-uppercase"
+                    type="button"
+                  >
+                    <i className="fa fa-shopping-cart" />
+                    <span class="fs-it-btn-vertical-line" />
+                    {`$${book.price}`}
+                  </button>
                 </div>
               </div>
             </div>
