@@ -10,20 +10,22 @@ export class BookList extends Component {
     this.state = {
       listView: true,
       books: [],
-      pagination: { count: 10, page: 1, total: null }
+      pagination: { count: 10, page: 1, total: null },
+      searchTerm: ''
     };
-    this.loadBooks(this.state.pagination.count, this.state.pagination.page);
+    this.loadBooks();
   }
-  loadBooks(count, page) {
-    count = count ? count : 10;
-    page = page ? page : 1;
-    let params = `?_page=${page}&_limit=${count}`;
+  loadBooks() {
+    console.log(this.state.pagination);
+    let params = `?_page=${this.state.pagination.page}&_limit=${
+      this.state.pagination.count
+    }`;
+    if (this.state.searchTerm) params += `&title_like=${this.state.searchTerm}`;
     axios.get(url + params).then(response => {
       this.setState({
         books: response.data,
         pagination: {
-          count: count,
-          page: page,
+          ...this.state.pagination,
           total: +response.headers['x-total-count']
         }
       });
@@ -43,9 +45,14 @@ export class BookList extends Component {
     this.setState({ listView: false });
   };
   handlePageClick = data => {
-    this.loadBooks(this.state.pagination.count, data.selected + 1);
+    this.setState(
+      { pagination: { ...this.state.pagination, page: data.selected + 1 } },
+      this.loadBooks
+    );
   };
-
+  handleSearchInput = event => {
+    this.setState({ searchTerm: event.target.value }, this.loadBooks);
+  };
   render() {
     let renderedBookList = this.state.books.map((book, id) => {
       return (
@@ -120,27 +127,46 @@ export class BookList extends Component {
               </div>
             </div>
           </div>
-          <ReactPaginate
-            containerClassName="pagination pagination-lg"
-            breakClassName="page-item"
-            breakLabel={<a className="page-link">...</a>}
-            pageClassName="page-item"
-            activeClassName="active"
-            activeLinkClassName="disabled"
-            previousClassName="page-item"
-            nextClassName="page-item"
-            pageLinkClassName="page-link"
-            previousLinkClassName="page-link"
-            nextLinkClassName="page-link"
-            pageCount={
-              this.state.pagination.total / this.state.pagination.count
-            }
-            initialPage={this.state.pagination.page - 1}
-            pageRangeDisplayed={5}
-            marginPagesDisplayed={2}
-            onPageChange={this.handlePageClick}
-          />
-          <div id="products" className="row view-group">
+          <div className="row">
+            <div className="input-group col-md-9">
+              <ReactPaginate
+                containerClassName="pagination col-md-5"
+                breakClassName="page-item"
+                breakLabel={<span className="page-link">...</span>}
+                pageClassName="page-item"
+                activeClassName="active"
+                activeLinkClassName="disabled"
+                previousClassName="page-item"
+                nextClassName="page-item"
+                pageLinkClassName="page-link"
+                previousLinkClassName="page-link"
+                nextLinkClassName="page-link"
+                pageCount={
+                  this.state.pagination.total / this.state.pagination.count
+                }
+                initialPage={this.state.pagination.page - 1}
+                pageRangeDisplayed={3}
+                marginPagesDisplayed={1}
+                onPageChange={this.handlePageClick}
+              />
+            </div>
+            <div className="input-group col-md-3">
+              <input
+                className="form-control"
+                type="search"
+                value={this.state.searchTerm}
+                id="example-search-input"
+                onChange={this.handleSearchInput}
+              />
+              <span className="input-group-append">
+                <button className="btn btn-outline-secondary" type="button">
+                  <i className="fa fa-search" />
+                </button>
+              </span>
+            </div>
+          </div>
+          <hr />
+          <div id="books" className="row view-group">
             {renderedBookList}
           </div>
         </div>
