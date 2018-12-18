@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import configureStore from './Store/ConfigureStore';
+import { Provider } from 'react-redux';
+import BookList from './BookList/BookList';
+const store = configureStore(); // You can also pass in an initialState here
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}>
+    <BookList />
+</Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

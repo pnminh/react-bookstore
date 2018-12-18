@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Main } from '../Main/Main';
 import { About } from '../About/About';
@@ -72,3 +72,4 @@ export class NavBar extends Component {
     );
   }
 }
+ */

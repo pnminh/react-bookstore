@@ -2,39 +2,56 @@ import React, { Component } from 'react';
 import * as axios from 'axios';
 import ReactPaginate from 'react-paginate';
 import './BookList.css';
+import { connect } from 'react-redux';
+import {
+  fetchBooks,
+  updatePageAndFetchBooks,
+  updateSearchTermAndFetchBooks,
+  booksListView
+} from '../Store/Action/Books';
 const url = 'http://localhost:3004/books';
-
-export class BookList extends Component {
+class BookList extends Component {
   constructor() {
     super();
-    this.state = {
+    /* this.props = {
       listView: true,
       books: [],
       pagination: { count: 10, page: 1, total: null },
-      searchTerm: ''
-    };
-    this.loadBooks();
+      searchTerm: '',
+      isLoading: false
+    }; */
   }
-  loadBooks() {
-    console.log(this.state.pagination);
-    let params = `?_page=${this.state.pagination.page}&_limit=${
-      this.state.pagination.count
+
+  componentDidMount() {
+    this.props.fetchBooks();
+  }
+  /* loadBooks = () => {
+    this.setState({ isLoading: true });
+    let params = `?_page=${this.props.pagination.page}&_limit=${
+      this.props.pagination.count
     }`;
-    if (this.state.searchTerm) {
-      params += `&title_like=${this.state.searchTerm}`;
+    if (this.props.searchTerm) {
+      params += `&title_like=${this.props.searchTerm}`;
     }
-    axios.get(url + params).then(response => {
-      this.setState({
-        books: response.data,
-        pagination: {
-          ...this.state.pagination,
-          total: +response.headers['x-total-count']
-        }
+    axios
+      .get(url + params)
+      .then(response => {
+        this.setState({ isLoading: false });
+        return response;
+      })
+      .then(response => {
+        this.setState({
+          books: response.data,
+          pagination: {
+            ...this.props.pagination,
+            total: +response.headers['x-total-count']
+          }
+        });
       });
-    });
-  }
+  }; */
   listView = () => {
-    this.setState({ listView: true });
+    /* this.setState({ listView: true }); */
+    this.props.changeListView(true);
   };
   getFirst100Words = words => {
     let wordTokens = words.split(' ');
@@ -44,23 +61,40 @@ export class BookList extends Component {
     return words;
   };
   gridView = () => {
-    this.setState({ listView: false });
+    /* his.setState({ listView: false }); */
+    this.props.changeListView(false);
   };
   handlePageClick = data => {
-    this.setState(
-      { pagination: { ...this.state.pagination, page: data.selected + 1 } },
-      this.loadBooks
-    );
+    if (this.props.pagination.page !== data.selected + 1) {
+      /* this.setState(
+        { pagination: { ...this.props.pagination, page: data.selected + 1 } },
+        this.loadBooks
+      ); */
+      this.props.updatePageAndFetchBooks(data.selected + 1);
+    }
   };
   handleSearchInput = event => {
-    this.setState({ searchTerm: event.target.value,pagination:{...this.state.pagination,page:1} }, this.loadBooks);
+    /* this.setState(
+      {
+        searchTerm: event.target.value,
+        pagination: { ...this.props.pagination, page: 1 }
+      },
+      this.loadBooks
+    ); */
+    this.props.updateSearchTermAndFetchBooks(event.target.value);
   };
   render() {
-    let renderedBookList = this.state.books.map((book, id) => {
+    if (this.props.isLoading) {
+      return <p>Loading…</p>;
+    }
+    
+    let renderedBookList = null;
+    if(this.props.books){
+      renderedBookList =this.props.books.map((book, id) => {
       return (
         <div
           className={`item col-xs-4 col-lg-4 ${
-            this.state.listView ? 'list-group-item' : 'grid-group-item'
+            this.props.listView ? 'list-group-item' : 'grid-group-item'
           }`}
           key={id}
         >
@@ -89,7 +123,7 @@ export class BookList extends Component {
             <div className="caption card-body">
               <div className="row justify-content-start">
                 <div
-                  className={`${this.state.listView ? 'col-lg-2' : 'col-sm-5'}`}
+                  className={`${this.props.listView ? 'col-lg-2' : 'col-sm-5'}`}
                 >
                   <button
                     className="btn btn-lg btn-outline-primary bg-color fs-it-btn text-uppercase"
@@ -99,7 +133,7 @@ export class BookList extends Component {
                   </button>
                 </div>
                 <div
-                  className={`${this.state.listView ? 'col-lg-2' : 'col-sm-6'}`}
+                  className={`${this.props.listView ? 'col-lg-2' : 'col-sm-6'}`}
                 >
                   <button
                     className="btn btn-lg btn-outline-secondary bg-color fs-it-btn text-uppercase"
@@ -116,9 +150,9 @@ export class BookList extends Component {
         </div>
       );
     });
+    }
     return (
       <div>
-        <hr />
         <div className="container">
           <div className="row">
             <h2>Our current bookstore</h2>
@@ -145,7 +179,7 @@ export class BookList extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="input-group col-md-9">
               <ReactPaginate
                 containerClassName="pagination col-md-5"
@@ -160,10 +194,10 @@ export class BookList extends Component {
                 previousLinkClassName="page-link"
                 nextLinkClassName="page-link"
                 pageCount={
-                  this.state.pagination.total / this.state.pagination.count
+                  this.props.pagination.total / this.props.pagination.count
                 }
-                initialPage={this.state.pagination.page - 1}
-                forcePage={this.state.pagination.page - 1}
+                initialPage={this.props.pagination.page - 1}
+                forcePage={this.props.pagination.page - 1}
                 pageRangeDisplayed={3}
                 marginPagesDisplayed={1}
                 onPageChange={this.handlePageClick}
@@ -173,7 +207,7 @@ export class BookList extends Component {
               <input
                 className="form-control"
                 type="search"
-                value={this.state.searchTerm}
+                value={this.props.searchTerm}
                 id="example-search-input"
                 onChange={this.handleSearchInput}
               />
@@ -183,7 +217,7 @@ export class BookList extends Component {
                 </button>
               </span>
             </div>
-          </div>
+          </div> */}
           <hr />
           <div id="books" className="row view-group">
             {renderedBookList}
@@ -193,3 +227,25 @@ export class BookList extends Component {
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+    books: state.books,
+    isLoading: state.booksIsLoading,
+    pagination: state.booksPagination,
+    searchTerm: state.booksSearchTerm,
+    listView: state.booksListView
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchBooks: () => dispatch(fetchBooks()),
+    updatePageAndFetchBooks: page => dispatch(updatePageAndFetchBooks(page)),
+    updateSearchTermAndFetchBooks: searchTerm =>
+      dispatch(updateSearchTermAndFetchBooks(searchTerm)),
+    changeListView: listView => dispatch(listView)
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(BookList);
