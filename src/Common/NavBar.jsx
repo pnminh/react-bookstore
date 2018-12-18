@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Main } from '../Main/Main';
 import { About } from '../About/About';
 import { BookList } from '../BookList/BookList';
+import { History } from '../History/History';
+import { Admin } from '../Admin/Admin';
 export class NavBar extends Component {
   render() {
     return (
@@ -11,7 +13,7 @@ export class NavBar extends Component {
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container">
               <a className="navbar-brand" href="index#">
-                Bloccit
+                Book Store
               </a>
               <button
                 className="navbar-toggler"
@@ -39,6 +41,18 @@ export class NavBar extends Component {
                     <span className="sr-only">(current)</span>
                   </li>
                   <li className="nav-item">
+                    <Link className="nav-link" to="/history">
+                      History
+                    </Link>
+                    <span className="sr-only">(current)</span>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/admin">
+                     Admin
+                    </Link>
+                    <span className="sr-only">(current)</span>
+                  </li>
+                  <li className="nav-item">
                     <Link className="nav-link" to="/about">
                       About Us
                     </Link>
@@ -48,12 +62,11 @@ export class NavBar extends Component {
               </div>
             </div>
           </nav>
-
-          <hr />
-
           <Route exact path="/" component={Main} />
           <Route path="/about" component={About} />
           <Route path="/books" component={BookList} />
+          <Route path="/admin" component={Admin} />
+          <Route path="/history" component={History} />
         </div>
       </Router>
     );

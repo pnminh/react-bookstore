@@ -106,7 +106,7 @@ export class BookList extends Component {
                     type="button"
                   >
                     <i className="fa fa-shopping-cart" />
-                    <span class="fs-it-btn-vertical-line" />
+                    <span className="fs-it-btn-vertical-line" />
                     {`$${book.price}`}
                   </button>
                 </div>
@@ -118,7 +118,6 @@ export class BookList extends Component {
     });
     return (
       <div>
-        <hr />
         <hr />
         <div className="container">
           <div className="row">
