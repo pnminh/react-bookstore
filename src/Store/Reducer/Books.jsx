@@ -27,7 +27,7 @@ export function booksPagination(
       return state;
   }
 }
-export function booksSearchTerm(state = null, action) {
+export function booksSearchTerm(state = '', action) {
   switch (action.type) {
     case 'BOOKS_SEARCH_TERM_CHANGE':
       return action.searchTerm;

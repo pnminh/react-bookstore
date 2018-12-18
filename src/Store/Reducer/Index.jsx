@@ -3,12 +3,14 @@ import {
   books,
   booksIsLoading,
   booksPagination,
-  booksSearchTerm
+  booksSearchTerm,
+  booksListView
 } from './Books';
 
 export default combineReducers({
   books,
   booksIsLoading,
   booksPagination,
-  booksSearchTerm
+  booksSearchTerm,
+  booksListView
 });

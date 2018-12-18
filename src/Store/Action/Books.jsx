@@ -49,6 +49,7 @@ export function updatePageAndFetchBooks(page) {
 }
 export function updateSearchTermAndFetchBooks(searchTerm) {
   return dispatch => {
+    dispatch(booksPageChanged(1));
     dispatch(booksSearchTermChange(searchTerm));
     dispatch(fetchBooks());
   };
@@ -56,7 +57,8 @@ export function updateSearchTermAndFetchBooks(searchTerm) {
 export function fetchBooks() {
   return (dispatch, getState) => {
     const { books, booksPagination, booksSearchTerm } = getState();
-    //only run loading if no book in the list to prevent page refreshed
+    //only run loading if no book in the list and search term has not been initialized to prevent page refreshed
+    //ca put the search term and the pagination component outside of the loading
     if ((!books || !books.length) && booksSearchTerm === null) {
       dispatch(booksIsLoading(true));
     }
