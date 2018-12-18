@@ -36,6 +36,11 @@ export function booksListView(listView) {
     listView
   };
 }
+export function updateListView(listView) {
+  return dispatch => {
+    dispatch(booksListView(listView));
+  };
+}
 export function updatePageAndFetchBooks(page) {
   return dispatch => {
     dispatch(booksPageChanged(page));
@@ -50,9 +55,14 @@ export function updateSearchTermAndFetchBooks(searchTerm) {
 }
 export function fetchBooks() {
   return (dispatch, getState) => {
-    dispatch(booksIsLoading(true));
-    const { booksPagination, booksSearchTerm } = getState();
-    let params = `?_page=${booksPagination.page}&_limit=${booksPagination.count}`;
+    const { books, booksPagination, booksSearchTerm } = getState();
+    //only run loading if no book in the list to prevent page refreshed
+    if ((!books || !books.length) && booksSearchTerm === null) {
+      dispatch(booksIsLoading(true));
+    }
+    let params = `?_page=${booksPagination.page}&_limit=${
+      booksPagination.count
+    }`;
     if (booksSearchTerm) {
       params += `&title_like=${booksSearchTerm}`;
     }

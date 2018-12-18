@@ -7,7 +7,7 @@ import {
   fetchBooks,
   updatePageAndFetchBooks,
   updateSearchTermAndFetchBooks,
-  booksListView
+  updateListView
 } from '../Store/Action/Books';
 const url = 'http://localhost:3004/books';
 class BookList extends Component {
@@ -51,7 +51,7 @@ class BookList extends Component {
   }; */
   listView = () => {
     /* this.setState({ listView: true }); */
-    this.props.changeListView(true);
+    this.props.updateListView(true);
   };
   getFirst100Words = words => {
     let wordTokens = words.split(' ');
@@ -62,7 +62,7 @@ class BookList extends Component {
   };
   gridView = () => {
     /* his.setState({ listView: false }); */
-    this.props.changeListView(false);
+    this.props.updateListView(false);
   };
   handlePageClick = data => {
     if (this.props.pagination.page !== data.selected + 1) {
@@ -87,69 +87,73 @@ class BookList extends Component {
     if (this.props.isLoading) {
       return <p>Loading…</p>;
     }
-    
+
     let renderedBookList = null;
-    if(this.props.books){
-      renderedBookList =this.props.books.map((book, id) => {
-      return (
-        <div
-          className={`item col-xs-4 col-lg-4 ${
-            this.props.listView ? 'list-group-item' : 'grid-group-item'
-          }`}
-          key={id}
-        >
-          <div className="thumbnail card">
-            <div className="img-event">
-              <img
-                className="group list-group-image img-fluid"
-                src={book.image_url}
-                alt=""
-              />
-            </div>
-            <div className="caption card-body title">
-              <h4 className="group card-title inner list-group-item-heading">
-                {book.title}
-              </h4>
-              <p className="group inner list-group-item-text">
-                Author:
-                <span>{book.authors.join(', ')}</span>
-              </p>
-            </div>
-            <div className="caption card-body body">
-              <p className="group inner list-group-item-text">
-                {this.getFirst100Words(book.description)}
-              </p>
-            </div>
-            <div className="caption card-body">
-              <div className="row justify-content-start">
-                <div
-                  className={`${this.props.listView ? 'col-lg-2' : 'col-sm-5'}`}
-                >
-                  <button
-                    className="btn btn-lg btn-outline-primary bg-color fs-it-btn text-uppercase"
-                    type="button"
+    if (this.props.books) {
+      renderedBookList = this.props.books.map((book, id) => {
+        return (
+          <div
+            className={`item col-xs-4 col-lg-4 ${
+              this.props.listView ? 'list-group-item' : 'grid-group-item'
+            }`}
+            key={id}
+          >
+            <div className="thumbnail card">
+              <div className="img-event">
+                <img
+                  className="group list-group-image img-fluid"
+                  src={book.image_url}
+                  alt=""
+                />
+              </div>
+              <div className="caption card-body title">
+                <h4 className="group card-title inner list-group-item-heading">
+                  {book.title}
+                </h4>
+                <p className="group inner list-group-item-text">
+                  Author:
+                  <span>{book.authors.join(', ')}</span>
+                </p>
+              </div>
+              <div className="caption card-body body">
+                <p className="group inner list-group-item-text">
+                  {this.getFirst100Words(book.description)}
+                </p>
+              </div>
+              <div className="caption card-body">
+                <div className="row justify-content-start">
+                  <div
+                    className={`${
+                      this.props.listView ? 'col-lg-2' : 'col-sm-5'
+                    }`}
                   >
-                    Get Info
-                  </button>
-                </div>
-                <div
-                  className={`${this.props.listView ? 'col-lg-2' : 'col-sm-6'}`}
-                >
-                  <button
-                    className="btn btn-lg btn-outline-secondary bg-color fs-it-btn text-uppercase"
-                    type="button"
+                    <button
+                      className="btn btn-lg btn-outline-primary bg-color fs-it-btn text-uppercase"
+                      type="button"
+                    >
+                      Get Info
+                    </button>
+                  </div>
+                  <div
+                    className={`${
+                      this.props.listView ? 'col-lg-2' : 'col-sm-6'
+                    }`}
                   >
-                    <i className="fa fa-shopping-cart" />
-                    <span className="fs-it-btn-vertical-line" />
-                    {`$${book.price}`}
-                  </button>
+                    <button
+                      className="btn btn-lg btn-outline-secondary bg-color fs-it-btn text-uppercase"
+                      type="button"
+                    >
+                      <i className="fa fa-shopping-cart" />
+                      <span className="fs-it-btn-vertical-line" />
+                      {`$${book.price}`}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      );
-    });
+        );
+      });
     }
     return (
       <div>
@@ -179,7 +183,7 @@ class BookList extends Component {
               </div>
             </div>
           </div>
-          {/* <div className="row">
+          <div className="row">
             <div className="input-group col-md-9">
               <ReactPaginate
                 containerClassName="pagination col-md-5"
@@ -217,7 +221,7 @@ class BookList extends Component {
                 </button>
               </span>
             </div>
-          </div> */}
+          </div>
           <hr />
           <div id="books" className="row view-group">
             {renderedBookList}
@@ -242,7 +246,7 @@ const mapDispatchToProps = dispatch => {
     updatePageAndFetchBooks: page => dispatch(updatePageAndFetchBooks(page)),
     updateSearchTermAndFetchBooks: searchTerm =>
       dispatch(updateSearchTermAndFetchBooks(searchTerm)),
-    changeListView: listView => dispatch(listView)
+    updateListView: listView => dispatch(updateListView(listView))
   };
 };
 export default connect(

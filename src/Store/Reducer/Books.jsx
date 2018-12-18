@@ -22,12 +22,12 @@ export function booksPagination(
     case 'BOOKS_TOTAL_CHANGE':
       return { ...state, total: action.total };
     case 'BOOKS_PAGE_CHANGE':
-      return { ...state, total: action.page };
+      return { ...state, page: action.page };
     default:
       return state;
   }
 }
-export function booksSearchTerm(state = '', action) {
+export function booksSearchTerm(state = null, action) {
   switch (action.type) {
     case 'BOOKS_SEARCH_TERM_CHANGE':
       return action.searchTerm;
