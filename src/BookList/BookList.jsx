@@ -1,56 +1,16 @@
-import React, { Component } from 'react';
-import * as axios from 'axios';
-import ReactPaginate from 'react-paginate';
 import './BookList.css';
-import { connect } from 'react-redux';
-import {
-  fetchBooks,
-  updatePageAndFetchBooks,
-  updateSearchTermAndFetchBooks,
-  updateListView
-} from '../Store/Action/Books';
-const url = 'http://localhost:3004/books';
-class BookList extends Component {
-  constructor() {
-    super();
-    /* this.props = {
-      listView: true,
-      books: [],
-      pagination: { count: 10, page: 1, total: null },
-      searchTerm: '',
-      isLoading: false
-    }; */
-  }
 
+import React, { Component } from 'react';
+import ReactPaginate from 'react-paginate';
+import { connect } from 'react-redux';
+
+import { fetchBooks, updateListView, updatePageAndFetchBooks, updateSearchTermAndFetchBooks } from '../Store/Action/Books';
+
+class BookList extends Component {
   componentDidMount() {
     this.props.fetchBooks();
   }
-  /* loadBooks = () => {
-    this.setState({ isLoading: true });
-    let params = `?_page=${this.props.pagination.page}&_limit=${
-      this.props.pagination.count
-    }`;
-    if (this.props.searchTerm) {
-      params += `&title_like=${this.props.searchTerm}`;
-    }
-    axios
-      .get(url + params)
-      .then(response => {
-        this.setState({ isLoading: false });
-        return response;
-      })
-      .then(response => {
-        this.setState({
-          books: response.data,
-          pagination: {
-            ...this.props.pagination,
-            total: +response.headers['x-total-count']
-          }
-        });
-      });
-  }; */
   listView = () => {
-    /* this.setState({ listView: true }); */
     this.props.updateListView(true);
   };
   getFirst100Words = words => {
@@ -61,26 +21,14 @@ class BookList extends Component {
     return words;
   };
   gridView = () => {
-    /* his.setState({ listView: false }); */
     this.props.updateListView(false);
   };
   handlePageClick = data => {
     if (this.props.pagination.page !== data.selected + 1) {
-      /* this.setState(
-        { pagination: { ...this.props.pagination, page: data.selected + 1 } },
-        this.loadBooks
-      ); */
       this.props.updatePageAndFetchBooks(data.selected + 1);
     }
   };
   handleSearchInput = event => {
-    /* this.setState(
-      {
-        searchTerm: event.target.value,
-        pagination: { ...this.props.pagination, page: 1 }
-      },
-      this.loadBooks
-    ); */
     this.props.updateSearchTermAndFetchBooks(event.target.value);
   };
   render() {
