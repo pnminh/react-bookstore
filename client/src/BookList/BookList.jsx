@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as axios from 'axios';
 import ReactPaginate from 'react-paginate';
 import './BookList.css';
-const url = 'http://localhost:3004/books';
+const url = '/books';
 
 export class BookList extends Component {
   constructor() {
@@ -78,7 +78,7 @@ export class BookList extends Component {
               </h4>
               <p className="group inner list-group-item-text">
                 Author:
-                <span>{book.authors.join(', ')}</span>
+                <span>{book.authors}</span>
               </p>
             </div>
             <div className="caption card-body body">
