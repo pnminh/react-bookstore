@@ -13,7 +13,10 @@
     "json-server": "json-server --watch db.json --routes routes.json --port 3004",
     "node-server": "nodemon src/server.js",
     "start-fake": "concurrently --kill-others \"npm run json-server\" \"npm run start-react\"",
-    "start": "concurrently --kill-others \"npm run node-server\" \"npm run start-react\""
+    "dev": "concurrently --kill-others \"npm run node-server\" \"npm run start-react\"",
+    "dev:server": "cd client&&npm run build&&cd ..&&npm run start",
+    "start": "node src/server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "",
   "license": "ISC",
