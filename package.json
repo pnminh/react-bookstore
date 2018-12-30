@@ -5,18 +5,17 @@
   "main": "src/server.js",
   "scripts": {
     "start-react": "cd client&&npm run start",
-    "build": "react-scripts build",
     "test": "set NODE_ENV=test&&jasmine",
     "prepare-db-dev": "rm -f dev.db&&sequelize db:migrate&&sequelize db:seed:all",
     "prepare-db-test": "rm -f test.db&&sequelize db:migrate --env test",
-    "postinstall": "if test \"$NODE_ENV\" != \"production\" ; then npm run prepare-db-dev&&npm run prepare-db-test ; fi ",
+    "postinstall": "npm run heroku-postbuild&&if test \"$NODE_ENV\" != \"production\" ; then npm run prepare-db-dev&&npm run prepare-db-test ; fi ",
     "json-server": "json-server --watch db.json --routes routes.json --port 3004",
     "node-server": "nodemon src/server.js",
     "start-fake": "concurrently --kill-others \"npm run json-server\" \"npm run start-react\"",
     "dev": "concurrently --kill-others \"npm run node-server\" \"npm run start-react\"",
     "dev:server": "cd client&&npm run build&&cd ..&&npm run start",
     "start": "node src/server.js",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "should-be-heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "",
   "license": "ISC",
