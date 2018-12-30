@@ -3,7 +3,7 @@ const app = express();
 
 const appConfig = require("./config/main-config.js");
 const routeConfig = require('./config/route-config');
-
+const path = require('path');
 appConfig.init(app, express);
 routeConfig.init(app);
 //host react on node server
